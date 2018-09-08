@@ -37,10 +37,11 @@ Notice about this example:
 * Letters that do not occur in the text are not listed in the output at all.
 """
 import string
-input = (str(input("Please enter a string of text (the bigger the better): "))).lower()
+input = (str(input("Please enter a string of text (the bigger the better): ")))
+print("The distribution of characters in " + '"' + input + '" is: ')
 letters = []
 for i in string.ascii_lowercase:
-    if input.count(i) != 0:
+    if input.lower().count(i) != 0:
         letters.append(i * input.count(i))
 for i in (sorted(sorted(letters), key = len, reverse = True)):
     print(i)
