@@ -1,7 +1,7 @@
 """
 distribution.py
-Author: <your name here>
-Credit: <list sources used, if any>
+Author: Noah Pikielny
+Credit: None
 
 Assignment:
 
@@ -36,3 +36,12 @@ Notice about this example:
   in the text and they are listed in the output in alphabetical order.
 * Letters that do not occur in the text are not listed in the output at all.
 """
+import string
+input = (str(input("Please enter a string of text (the bigger the better): "))).lower()
+letters = []
+for i in string.ascii_lowercase:
+    if input.count(i) != 0:
+        letters.append(i * input.count(i))
+for i in (sorted(sorted(letters), key = len, reverse = True)):
+    print(i)
+    
