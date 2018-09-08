@@ -1,7 +1,7 @@
 """
 distribution.py
 Author: Noah Pikielny
-Credit: https://www.geeksforgeeks.org/sorted-function-python/
+Credit: None
 
 Assignment:
 
@@ -38,10 +38,11 @@ Notice about this example:
 """
 import string
 input = (str(input("Please enter a string of text (the bigger the better): ")))
+input = input.lower()
 print("The distribution of characters in " + '"' + input + '" is: ')
 letters = []
 for i in string.ascii_lowercase:
-    if input.lower().count(i) != 0:
+    if input.count(i) != 0:
         letters.append(i * input.count(i))
 for i in (sorted(sorted(letters), key = len, reverse = True)):
     print(i)
