@@ -38,8 +38,8 @@ Notice about this example:
 """
 import string
 input = (str(input("Please enter a string of text (the bigger the better): ")))
-input = input.lower()
 print("The distribution of characters in " + '"' + input + '" is: ')
+input = input.lower()
 letters = []
 for i in string.ascii_lowercase:
     if input.count(i) != 0:
