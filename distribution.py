@@ -1,7 +1,7 @@
 """
 distribution.py
 Author: Noah Pikielny
-Credit: None
+Credit: https://www.geeksforgeeks.org/sorted-function-python/
 
 Assignment:
 
